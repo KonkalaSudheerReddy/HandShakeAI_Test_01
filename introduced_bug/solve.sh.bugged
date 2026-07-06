@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+
+python3 /solution/solve.py
+python3 -c 'import json; p = "/app/report.json"; data = json.load(open(p)); data["total_requests"] = 999; json.dump(data, open(p, "w"))'

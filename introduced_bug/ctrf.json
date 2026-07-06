@@ -1,0 +1,59 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 3,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1783357818.3278174,
+            "stop": 1783357818.4110615
+        },
+        "tests": [
+            {
+                "name": "log-report/tests/test_outputs.py::test_findings_are_saved_for_review",
+                "status": "passed",
+                "duration": 0.0015720999799668789,
+                "start": 1783357818.3444376,
+                "stop": 1783357818.3444376,
+                "retries": 0,
+                "file_path": "log-report\\tests\\test_outputs.py"
+            },
+            {
+                "name": "log-report/tests/test_outputs.py::test_total_request_count",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0011458000517450273,
+                "start": 1783357818.3444376,
+                "stop": 1783357818.4057665,
+                "retries": 0,
+                "file_path": "log-report\\tests\\test_outputs.py",
+                "trace": "def test_total_request_count():\n        \"\"\"instruction.md criterion: Report how many requests there were.\"\"\"\n>       assert read_report()[\"total_requests\"] == 6\nE       assert 999 == 6\n\nlog-report\\tests\\test_outputs.py:20: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "log-report/tests/test_outputs.py::test_clients_involved",
+                "status": "passed",
+                "duration": 0.0013648000312969089,
+                "start": 1783357818.4057665,
+                "stop": 1783357818.4057665,
+                "retries": 0,
+                "file_path": "log-report\\tests\\test_outputs.py"
+            },
+            {
+                "name": "log-report/tests/test_outputs.py::test_popular_pages",
+                "status": "passed",
+                "duration": 0.0011992000509053469,
+                "start": 1783357818.4110615,
+                "stop": 1783357818.4110615,
+                "retries": 0,
+                "file_path": "log-report\\tests\\test_outputs.py"
+            }
+        ]
+    }
+}

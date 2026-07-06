@@ -1,0 +1,32 @@
+Deliberately bugged report:
+
+{"total_requests": 999, "unique_ips": 3, "top_path": "/index.html"}
+
+Verifier output:
+
+collected 4 items
+
+test_outputs.py .F..                                             [100%]
+
+FAILED test_total_request_count
+
+assert read_report()["total_requests"] == 6
+E       assert 999 == 6
+
+PASSED test_findings_are_saved_for_review
+PASSED test_clients_involved
+PASSED test_popular_pages
+FAILED test_total_request_count
+
+1 failed, 3 passed
+pytest_exit=1
+reward=0
+
+CTRF summary:
+
+tests: 4
+passed: 3
+failed: 1
+skipped: 0
+pending: 0
+other: 0
