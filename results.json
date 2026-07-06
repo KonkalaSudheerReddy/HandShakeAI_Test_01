@@ -1,0 +1,49 @@
+{
+  "execution_note": "Verifier-equivalent runs executed locally with Python 3.11.15, pytest 8.4.1, and pytest-json-ctrf 0.3.5 because Docker and Harbor were unavailable on the validation machine.",
+  "expected_report": {
+    "total_requests": 6,
+    "unique_ips": 3,
+    "top_path": "/index.html"
+  },
+  "oracle": {
+    "reward": 1,
+    "ctrf_summary": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "pending": 0,
+      "other": 0,
+      "start": 1783357603.022539,
+      "stop": 1783357603.154678
+    }
+  },
+  "nop": {
+    "reward": 0,
+    "ctrf_summary": {
+      "tests": 4,
+      "passed": 0,
+      "failed": 4,
+      "skipped": 0,
+      "pending": 0,
+      "other": 0,
+      "start": 1783357614.7870717,
+      "stop": 1783357615.138173
+    }
+  },
+  "wrong_solution": {
+    "injected_total_requests": 999,
+    "reward": 0,
+    "ctrf_summary": {
+      "tests": 4,
+      "passed": 3,
+      "failed": 1,
+      "skipped": 0,
+      "pending": 0,
+      "other": 0,
+      "start": 1783357818.3278174,
+      "stop": 1783357818.4110615
+    },
+    "failure": "assert 999 == 6"
+  }
+}
